@@ -1,0 +1,36 @@
+.image-card {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff; /* Add a background color for better visuals */
+}
+
+.image-card:hover {
+    transform: scale(1.05); /* Slightly smaller scale for subtle effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid black; /* Optional: Separates the image from the card content */
+}
+
+.image-card img {
+    width: 100%;
+    height: 220px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills the card */
+    border: 1px solid #ddd; /* Optional: Separates the image from the card content */
+}
+
+.image-card .placeholder {
+    width: 100%;
+    height: 220px; /* Match the image height */
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Lighter background for placeholder */
+}
+
+.image-card img.hidden {
+    display: none;
+}
+
+.image-card img.visible {
+    display: block;
+}

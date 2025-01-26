@@ -1,21 +1,47 @@
-# GlobalWebIndex Engineering Challenge
+**Cat Lover App**
 
-## Exercise: CatLover
+Overview
 
-Create a React application for cat lovers which is going to build upon thecatapi.com and will have 3 views.
-The **first** view displays a list of 10 random cat images and a button to load more. Clicking on any of those images opens a modal view with the image and the information about the cat’s breed if available. This would be a link to the second view below - the breed detail. The modal should also contain a form to mark the image as your favourite (a part of the third view as well). Make sure you can copy-paste the URL of the modal and send it to your friends - they should see the same image as you can see.
+This application is a React-based web app for managing and displaying cat images. Users can browse cat images, view detailed information about cat breeds, and manage their favorite images. The app integrates with a backend API for fetching data and supports modern React features such as hooks and context for state management.
 
-The **second** view displays a list of cat breeds. Each breed opens a modal again with a list of cat images of that breed. Each of those images must be a link to the image detail from the previous point.
 
-The **third** view allows you do the following things:
+**API Integration**
 
-- Display your favourite cats
-- Remove an image from your favourites (use any UX option you like)
+The app integrates with a backend API to fetch and manage data.
 
-You can find the API documentation here: https://developers.thecatapi.com/
-We give you a lot of freedom in technologies and ways of doing things. We only insist on you using React.js. Get creative as much as you want, we WILL appreciate it. You will not be evaluated based on how well you follow these instructions, but based on how sensible your solution will be. In case you are not able to implement something you would normally implement for time reasons, make it clear with a comment.
+**Endpoints**
 
-## Submission
+ - GET /breeds: Fetches a list of cat breeds.
 
-Once you have built your app, share your code in the mean suits you best
-Good luck, potential colleague!
+- GET /images/search: Fetches random cat images.
+
+- GET /favourites: Fetches the user's favorite cat images.
+
+- POST /favourites: Adds an image to the user's favorites.
+
+- DELETE /favourites/:id: Removes an image from the user's favorites.
+
+**Axios Instance (apiClient.ts)**
+
+ - Configures a centralized Axios instance with base URL and headers for API requests.
+
+- Includes error handling via interceptors
+
+**Features**
+
+1. Image Gallery: Display a grid of cat images with a "Load More" functionality.
+
+2. Favorites Management: Add or remove cat images from favorites.
+
+3. Breed Information: View detailed information about specific cat breeds.
+
+4. Error Handling: Provides user-friendly error messages.
+
+5. Responsive Design: Utilizes react-bootstrap for a consistent, responsive UI.
+
+6. Global State Management: Shares the favorites state across components using the Context API.
+
+**Installation and Setup**
+
+1. yarn install
+2. yarn start

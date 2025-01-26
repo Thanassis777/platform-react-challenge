@@ -1,0 +1,31 @@
+.custom-navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--navColor) !important;
+    cursor: pointer;
+}
+
+.navbar-link {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    color: var(--navColor) !important;
+}
+
+.navbar-brand:hover, .navbar-link:hover {
+    color: #8e9d76 !important;
+}
+
+.content {
+    margin-top: 5rem;
+}
+
+.custom-toggler {
+    background-color: var(--navColor) !important
+}
+

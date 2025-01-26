@@ -1,0 +1,12 @@
+.image-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust 150px as needed for smaller screens */
+    gap: 15px;
+    margin: 20px;
+}
+
+.image-content {
+    width: 100%;
+    height: auto;
+}
+
